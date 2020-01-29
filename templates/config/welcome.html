@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block content %} 
+      <div class="card mb-3">
+        <div class="card-body">
+            <h1>Django-WebApp-CRUD!</h1>
+            <p>This is a project for making a DBA of Employees :)</p>
+
+            <a class="btn btn-dark" href="{% url 'employee:list' %}"> 
+                View actual Employees!
+            </a>
+
+        </div>
+      </div>
+{% endblock %}
