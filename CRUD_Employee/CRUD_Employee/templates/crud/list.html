@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://nubecolectiva.com/favicon.ico" />
+
+    <meta name="theme-color" content="#000000" />
+
+    <title>CRUD Employees </title>
+
+    {# Cargamos la librería #}
+    {% load bootstrap4 %}
+ 
+    {# CSS Bootstrap #}
+    {% bootstrap_css %} 
+
+    {# Archivos #}
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+    
+  </head>
+
+  <body> 
+
+
+    <footer class="text-muted mt-3 mb-3">
+        <div align="center">
+          Desarrollado por <a href="http://www.nubecolectiva.com" target="_blank">Nube Colectiva</a>
+      </div> 
+    </footer>
+
+      {# JS y jQuery Bootstrap #}
+      {% bootstrap_javascript jquery='full' %} 
+
+      <script type="text/javascript">
+        function eliminar() {
+          var x = confirm("Eliminar Producto ?");
+          if (x)
+            return true;
+          else
+            return false;
+        }
+      </script>
+    
+  </body>
+</html>
